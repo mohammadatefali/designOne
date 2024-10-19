@@ -39,7 +39,7 @@ authForm.addEventListener("submit", function (event) {
 
   // Email validation regex
   //const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const emailOrPhoneRegex = /(\w{2,}@(gmail|yahoo).[a-z]{2,}|^01\d{9}$)/gi;
+const emailOrPhoneRegex = /(\w{2,}@(gmail|yahoo).com|^01\d{9}$)/gi;
   if (isLogin) {
     if (users[email]) {
       if (users[email].password === password) {
