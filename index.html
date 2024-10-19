@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="formTitle">Login</h2>
+      <form id="authForm">
+        <input
+          type="text"
+          id="email"
+          placeholder="Enter Email or Phone Number"
+          required
+        /><br />
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter Password"
+          required
+        /><br />
+        <input type="checkbox" id="showPassword" /> Show Password<br />
+        <button type="submit" id="authButton">Sign In</button>
+        <p class="message" id="errorMessage"></p>
+        <p id="toggleForm">
+          <span class="link" id="toggleLink">Sign Up</span>
+        </p>
+      </form>
+    </div>
+  </body>
+</html
