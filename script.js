@@ -25,7 +25,7 @@ toggleLink.addEventListener("click", function () {
 authForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  const email = document.getElementById("email").value.trim();
+  const email = document.getElementById("email").value.toLowerCase().trim();
   const password = passwordField.value.trim();
 
   const users = JSON.parse(localStorage.getItem("users")) || {};
